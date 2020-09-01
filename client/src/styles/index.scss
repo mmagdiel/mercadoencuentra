@@ -1,0 +1,14 @@
+// Import normalize
+@import "./normalize";
+
+// Import a system grid
+@import "./flexboxgrid";
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
