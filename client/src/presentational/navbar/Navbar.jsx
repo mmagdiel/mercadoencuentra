@@ -10,7 +10,7 @@ import {
 } from "../../copies/navbar";
 import cl from "classnames";
 
-export default function NavBar({ value, change }) {
+export default function NavBar({ value, change, enter, click }) {
   return (
     <div className="row nav mx-0">
       <div className="col-sm-1 col-md-2 col-lg-2"></div>
@@ -26,8 +26,10 @@ export default function NavBar({ value, change }) {
             placeholder={placeholderSearch}
             value={value}
             onChange={change}
+            onKeyDown={enter}
           />
           <Link
+            onClick={click}
             to={`/items?search=${value}`}
             className={cl("navbar-search-button", {
               disabled: !value,
