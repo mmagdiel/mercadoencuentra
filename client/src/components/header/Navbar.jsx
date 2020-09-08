@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import logo from "../../images/Logo_ML.png";
 import search from "../../images/ic_Search.png";
-
-const placeholderSearch = "Nunca dejes de buscar";
-const mercadolibreLogo = "Logo de Mercadolibre";
-const searchIcon = "Boton de busqueda";
+import {
+  mercadolibreLogo,
+  searchIcon,
+  placeholderSearch,
+} from "../../copies/navbar";
 
 function NavBar() {
   const [forSearch, SetForSearch] = useState("");
