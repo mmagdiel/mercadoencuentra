@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+::placeholder {
+  color: #999;
+}
+
+.nav {
+  background-color: #ffe600;
+}
+
+.navbar-search {
+  border: hidden;
+  flex-grow: 1;
+  color: #333;
+  font-size: 18px;
+  border-top-left-radius: map-get($space, "1");
+  border-bottom-left-radius: map-get($space, "1");
+  border-top-right-radius: map-get($space, "0");
+  border-bottom-right-radius: map-get($space, "0");
+}
+
+.navbar-search:focus {
+  outline: none;
+}
+
+.navbar-search:hover {
+  border: 2px solid #eee;
+}
+
+.navbar-search-button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  border-top-right-radius: map-get($space, "1");
+  border-bottom-right-radius: map-get($space, "1");
+  border-top-left-radius: map-get($space, "0");
+  border-bottom-left-radius: map-get($space, "0");
+}
+
+.navbar-search-button:focus {
+  outline: none;
+}
+
+.navbar-search-button:hover {
+  border: 2px solid #999;
+}
