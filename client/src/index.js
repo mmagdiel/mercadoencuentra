@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.scss";
-import App from "./components/app/App";
+import Bootstrap from "./components/bootstrap/Bootstrap";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Bootstrap />
   </React.StrictMode>,
   document.getElementById("root")
 );
