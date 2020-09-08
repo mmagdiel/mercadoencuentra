@@ -13,6 +13,9 @@
   flex-grow: 1;
   color: #333;
   font-size: 18px;
+  margin-left: map-get($space, "2");
+  padding-left: map-get($space, "2");
+  padding-right: map-get($space, "2");
   border-top-left-radius: map-get($space, "1");
   border-bottom-left-radius: map-get($space, "1");
   border-top-right-radius: map-get($space, "0");
@@ -32,6 +35,8 @@
   display: flex;
   align-items: center;
   background-color: #eee;
+  padding-left: map-get($space, "2");
+  padding-right: map-get($space, "2");
   border-top-right-radius: map-get($space, "1");
   border-bottom-right-radius: map-get($space, "1");
   border-top-left-radius: map-get($space, "0");
@@ -44,4 +49,13 @@
 
 .navbar-search-button:hover {
   border: 2px solid #999;
+}
+
+.navbar-search-button.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.navbar-search-button:hover.disabled {
+  border: none;
 }
