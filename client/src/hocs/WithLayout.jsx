@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/header/Navbar";
+import Header from "../container/header/Header";
 
 export default function WithLayout({ children }) {
   return (
     <>
-      <Navbar />
+      <Header />
       {children}
     </>
   );
