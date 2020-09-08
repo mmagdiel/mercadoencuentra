@@ -1,7 +1,10 @@
 import React from "react";
+import WithLayout from "../hocs/WithLayout";
 
-function NotFound() {
-  return <div>NotFound</div>;
+export default function NotFound() {
+  return (
+    <WithLayout>
+      <div>NotFound</div>
+    </WithLayout>
+  );
 }
-
-export default NotFound;

@@ -1,7 +1,10 @@
 import React from "react";
+import WithLayout from "../hocs/WithLayout";
 
-function Master() {
-  return <div>Master</div>;
+export default function Master() {
+  return (
+    <WithLayout>
+      <div>Master</div>
+    </WithLayout>
+  );
 }
-
-export default Master;

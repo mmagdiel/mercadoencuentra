@@ -12,14 +12,14 @@ export default function Bootstrap() {
         <Route path="/items/:id">
           <Detail />
         </Route>
-        <Route path="/items?search=">
+        <Route path="/items">
           <Master />
+        </Route>
+        <Route path="/:id">
+          <NotFound />
         </Route>
         <Route path="/">
           <Home />
-        </Route>
-        <Route>
-          <NotFound />
         </Route>
       </Switch>
     </Router>
