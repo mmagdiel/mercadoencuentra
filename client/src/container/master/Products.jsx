@@ -8,7 +8,7 @@ export default function Products({ url }) {
   return products.length === 0 ? (
     <Loader />
   ) : (
-    <div className="row mx-0">
+    <div className="base column axis-center">
       {products.map((product) => (
         <CardProduct key={product.id} product={product} />
       ))}

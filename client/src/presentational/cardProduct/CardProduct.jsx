@@ -1,27 +1,34 @@
 import React from "react";
+import "./CardProduct.scss";
+import shipping from "../../images/ic_shipping.png";
+import { shippingAtl } from "../../copies/cardProduct";
+import { Link } from "react-router-dom";
 
 export default function CardProduct({ product }) {
   return (
-    <div>
-      {product.free_shipping}
-      {product.condition}
-      {product.author.nickname}
-      {product.author.registration_date}
-      {product.price.amount}
-      {product.price.currency}
-      {product.picture}
-      {product.price.decimals}
-      <div>{product.title}</div>
-    </div>
+    <Link className="card my-3" to={`/items/${product.id}`}>
+      <div className="card-img">
+        <img className="image" src={product.picture} alt={product.title} />
+      </div>
+      <div className="card-body mx-3">
+        <div className="card-header">
+          <h2 className="my-4">
+            $ {product.price.amount}
+            <span className="px-1">
+              {product.free_shipping ? (
+                <img src={shipping} alt={shippingAtl} />
+              ) : null}
+            </span>
+          </h2>
+          <div className="card-location">
+            <p>{product.address}</p>
+          </div>
+        </div>
+        <div className="card-description">
+          <h4 className="my-1">{product.title}</h4>
+          <h4 className="my-1">{product.condition}</h4>
+        </div>
+      </div>
+    </Link>
   );
 }
-
-/*
-  author: {nickname: "GRUPO KRONER", registration_date: "2018-07-30T14:41:27.000-04:00"}
-  condition: "new"
-  free_shipping: true
-  id: "MLA852250548"
-  picture: "http://http2.mlstatic.com/D_970023-MLA43167710046_082020-O.jpg"
-  price: {currency: "ARS", amount: 5899, decimals: 0}
-  title:
-*/

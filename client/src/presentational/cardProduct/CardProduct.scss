@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+.card {
+  display: flex;
+  width: 70%;
+  text-decoration-line: none;
+}
+.card {
+  display: flex;
+  color: #333;
+  width: 66%;
+  border-radius: map-get($space, "1");
+  text-decoration-line: none;
+}
+.card:active {
+  color: #666;
+}
+.card-img {
+  flex-basis: 180px;
+  height: 180px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: map-get($space, "1");
+}
+.card-body {
+  flex-grow: 1;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-description {
+  color: #666;
+}
+.card-location {
+  color: #999;
+}

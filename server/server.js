@@ -71,6 +71,7 @@ async function getProducts(url) {
           picture: item.thumbnail,
           condition: item.condition,
           free_shipping: item.shipping.free_shipping,
+          address: item.seller_address.state.name,
         })),
       ];
     })
