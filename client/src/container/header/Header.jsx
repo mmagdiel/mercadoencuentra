@@ -9,8 +9,9 @@ export default function Header() {
   const handleClick = (e) => setForSearch("");
   const handleEnter = (e) => {
     if (e.key === "Enter") {
-      history.push(`/items?search=${forSearch}`);
+      const key = forSearch;
       setForSearch("");
+      history.push(`/items?search=${key}`);
     }
   };
   return (

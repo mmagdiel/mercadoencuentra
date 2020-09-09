@@ -2,9 +2,12 @@ const bodyParser = require("body-parser"),
   express = require("express"),
   morgan = require("morgan"),
   axios = require("axios"),
+  cors = require("cors"),
   port = 7777;
 
 const app = express();
+
+app.use(cors());
 
 app.use(
   bodyParser.urlencoded({
