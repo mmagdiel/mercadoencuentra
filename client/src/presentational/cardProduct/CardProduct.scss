@@ -1,13 +1,11 @@
 @import "../../styles/variables";
+@import "../../styles/layout";
+
 .card {
-  display: flex;
-  width: 70%;
-  text-decoration-line: none;
-}
-.card {
+  @extend .my-3;
   display: flex;
   color: #333;
-  width: 66%;
+  background-color: #fff;
   border-radius: map-get($space, "1");
   text-decoration-line: none;
 }

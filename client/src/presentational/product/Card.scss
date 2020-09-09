@@ -1,0 +1,42 @@
+@import "../../styles/layout";
+@import "../../styles/variables";
+
+.product {
+  display: flex;
+  background-color: #fff;
+}
+.product-image {
+  flex-basis: 680px;
+  flex-shrink: 1;
+}
+.product-image img {
+  height: 680px;
+}
+.product-description {
+  flex-shrink: 2;
+}
+.product-intro {
+  @extend .mt-4;
+  font-size: 14px;
+}
+.product-title {
+  @extend .mt-3;
+  font-size: 24px;
+}
+.product-price {
+  @extend .my-4;
+  font-size: 46px;
+}
+.product-btn {
+  @extend .ml-4;
+  display: flex;
+}
+.product-btn .btn {
+  @extend .py-3;
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: map-get($space, "1");
+  background-color: #3483fa;
+}
