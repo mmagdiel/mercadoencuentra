@@ -1,10 +1,11 @@
 import React from "react";
 import "./Loader.scss";
+import { loaderText } from "../../copies/loader";
 
 export default function Loader() {
   return (
     <div className="main">
-      <div>Cargando...</div>
+      <div>{loaderText}</div>
     </div>
   );
 }
